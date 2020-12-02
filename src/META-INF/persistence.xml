@@ -5,6 +5,8 @@
 	<persistence-unit name="JPA-PRACTICA" transaction-type="RESOURCE_LOCAL">
 		<class>Entidades.Empresa</class>
 		<class>Entidades.Usuario</class>
+		<class>Entidades.Producto</class>
+		<class>Entidades.Categoria</class>
 		<properties>
 			<property name="eclipselink.ddl-generation" value="drop-abd-create-tables"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jee"/>
