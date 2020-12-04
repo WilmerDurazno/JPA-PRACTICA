@@ -15,18 +15,23 @@ public class Producto implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int codigo;
 	private String nombre;
 	private String precio;
 	private String descripcion;
-	private int cat_pro_id;
-	private int em_pro_id;
+	@ManyToOne
+	@JoinColumn
+	private Categoria cat_pro_id;
+	@ManyToOne
+	@JoinColumn
+	private Empresa em_pro_id;
 
 	public Producto() {
 		super();
 	}
 
-	public Producto(int codigo, String nombre, String precio, String descripcion, int cat_pro_id, int em_pro_id) {
+	public Producto(int codigo, String nombre, String precio, String descripcion, Categoria cat_pro_id, Empresa em_pro_id) {
 		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
@@ -68,19 +73,19 @@ public class Producto implements Serializable {
 		this.descripcion = descripcion;
 	}
 
-	public int getCat_pro_id() {
+	public Categoria getCat_pro_id() {
 		return cat_pro_id;
 	}
 
-	public void setCat_pro_id(int cat_pro_id) {
+	public void setCat_pro_id(Categoria cat_pro_id) {
 		this.cat_pro_id = cat_pro_id;
 	}
 
-	public int getEm_pro_id() {
+	public Empresa getEm_pro_id() {
 		return em_pro_id;
 	}
 
-	public void setEm_pro_id(int em_pro_id) {
+	public void setEm_pro_id(Empresa em_pro_id) {
 		this.em_pro_id = em_pro_id;
 	}
 

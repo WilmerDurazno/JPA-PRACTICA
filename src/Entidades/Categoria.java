@@ -1,6 +1,8 @@
 package Entidades;
 
 import java.io.Serializable;
+import java.util.List;
+
 import javax.persistence.*;
 
 /**
@@ -18,6 +20,11 @@ public class Categoria implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int codigo;
 	private String nombre;
+	
+	@OneToMany(cascade = CascadeType.ALL ,mappedBy = "cat_pro_id")
+	private List<Producto> productos;
+	
+	
 
 	public Categoria() {
 		super();
@@ -27,6 +34,7 @@ public class Categoria implements Serializable {
 		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
+		
 	}
 
 	public int getCodigo() {
@@ -44,10 +52,20 @@ public class Categoria implements Serializable {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+	
+
+	
+	public List<Producto> getProductos() {
+		return productos;
+	}
+
+	public void setProductos(List<Producto> productos) {
+		this.productos = productos;
+	}
 
 	@Override
 	public String toString() {
-		return "Categoria [codigo=" + codigo + ", nombre=" + nombre + "]";
+		return "Categoria [codigo=" + codigo + ", nombre=" + nombre + ", productos=" + productos +  "]";
 	}
 	
 	

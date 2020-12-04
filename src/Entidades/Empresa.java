@@ -1,6 +1,8 @@
 package Entidades;
 
 import java.io.Serializable;
+import java.util.List;
+
 import javax.persistence.*;
 
 /**
@@ -15,10 +17,13 @@ public class Empresa implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int codigo;
 	private String ruc;
 	private String nombre;
 	private String direccion;
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "em_pro_id" )
+	private List<Producto> productos;
 	
 	public Empresa() {
 		//CONSTRUCTOR OBLIGATORIO;
@@ -72,9 +77,20 @@ public class Empresa implements Serializable {
 		this.direccion = direccion;
 	}
 
+	
+	
+	public List<Producto> getProductos() {
+		return productos;
+	}
+
+	public void setProductos(List<Producto> productos) {
+		this.productos = productos;
+	}
+
 	@Override
 	public String toString() {
-		return "Empresa [codigo=" + codigo + ", ruc=" + ruc + ", nombre=" + nombre + ", direccion=" + direccion + "]";
+		return "Empresa [codigo=" + codigo + ", ruc=" + ruc + ", nombre=" + nombre + ", direccion=" + direccion
+				+ ", productos=" + productos + "]";
 	}
    
 }
