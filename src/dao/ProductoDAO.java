@@ -9,4 +9,6 @@ public interface ProductoDAO extends GenericDAO<Producto, Integer> {
 	public void eliminarPorNombre(String nombre);
 	
 	public  Producto buscarProducto(String nombre);
+	
+	public List<Producto> listarProducto(int id);
 }
