@@ -1,7 +1,6 @@
 package jpa;
 
-import java.util.List;
-
+import java.util.List; 
 import javax.persistence.Query;
 import Entidades.Producto;
 import dao.ProductoDAO;

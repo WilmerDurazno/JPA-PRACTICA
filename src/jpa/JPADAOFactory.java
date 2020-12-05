@@ -27,7 +27,7 @@ public class JPADAOFactory extends DAOFactory{
 	}
 
 	@Override
-	public UsuarioDAO usuarioDAO() {
+	public UsuarioDAO getUsuarioDAO() {
 		// TODO Auto-generated method stub
 		return new JPAUsuarioDAO();
 	}
