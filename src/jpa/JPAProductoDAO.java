@@ -29,6 +29,13 @@ public class JPAProductoDAO extends JPAGenericDAO<Producto,Integer> implements P
 		//em.getTransaction().commit();
 		return p;
 	}
+	
+	public List<Producto> listarProducto(int id){
+		Query query = em.createQuery("SELECT p FROM Producto p WHERE p.em_pro_id.codigo = :nombre");
+		query.setParameter("nombre", id);
+		List<Producto> listp = (List<Producto>) query.getResultList();
+		return listp;
+	}
 
 	
 	

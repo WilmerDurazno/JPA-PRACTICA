@@ -8,6 +8,8 @@ import javax.persistence.*;
  *
  */
 @Entity
+//@NamedQuery(name = "crearUsuario", q uery = "INSERT Usuario VALUES(0,:nombre,:apellido,:cedula,:correo,:contrasena,:tipo_usuario,:Empresa_em_id")
+//@NamedQuery(name = "eliminarPorNombre", query = "DELETE FROM Producto p WHERE p.nombre = :nombre")
 public class Usuario implements Serializable {
 
 	
@@ -24,14 +26,14 @@ public class Usuario implements Serializable {
 	private String tipo_usuario;
 	@ManyToOne
 	@JoinColumn
-	private int em_pro_id;
+	private Empresa Empresa_em_id;
 	
 	public Usuario() {
 		super();
 	}
 
 	public Usuario(int codigo, String nombre, String apellido, String cedula, String correo, String contrasena,
-			String tipo_usuario, int em_pro_id) {
+			String tipo_usuario, Empresa empresa_em_id) {
 		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
@@ -99,12 +101,12 @@ public class Usuario implements Serializable {
 		this.tipo_usuario = tipo_usuario;
 	}
 
-	public int getEm_pro_id() {
-		return em_pro_id;
+	public Empresa getEmpresa_em_id() {
+		return Empresa_em_id;
 	}
 
-	public void setEm_pro_id(int em_pro_id) {
-		em_pro_id = em_pro_id;
+	public void setEmpresa_em_id(Empresa empresa_em_id) {
+		Empresa_em_id = empresa_em_id;
 	}
 
 	@Override
