@@ -43,7 +43,7 @@ public class crearUsuario extends HttpServlet {
 		
 		UsuarioDAO ud = DAOFactory.getFactory().getUsuarioDAO();
 		EmpresaDAO ed = DAOFactory.getFactory().getEmpresaDAO();
-		
+		//Tienes que mandar el objeto no solo el dato del id por eso da error al cargar al inicio 
 		Usuario user = new Usuario(0,nombre,apellido,cedula,correo,contrasena,tipo_usuario,codigo_empresa);
 		
 		try {

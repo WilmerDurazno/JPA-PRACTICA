@@ -29,7 +29,7 @@ public class Usuario implements Serializable {
 	private Empresa Empresa_em_id;
 	
 	public Usuario() {
-		super();
+		//CONSTRUCTOR OBLIGATORIO;
 	}
 
 	public Usuario(int codigo, String nombre, String apellido, String cedula, String correo, String contrasena,
@@ -42,7 +42,7 @@ public class Usuario implements Serializable {
 		this.correo = correo;
 		this.contrasena = contrasena;
 		this.tipo_usuario = tipo_usuario;
-		this.em_pro_id = em_pro_id;
+		Empresa_em_id = empresa_em_id;
 	}
 	
 	public int getCodigo() {
@@ -113,7 +113,8 @@ public class Usuario implements Serializable {
 	public String toString() {
 		return "Usuario [codigo=" + codigo + ", nombre=" + nombre + ", apellido=" + apellido + ", cedula=" + cedula
 				+ ", correo=" + correo + ", contrasena=" + contrasena + ", tipo_usuario=" + tipo_usuario
-				+ ", Empresa_em_id=" + em_pro_id + "]";
+				+ ", Empresa_em_id=" + Empresa_em_id + "]";
 	}
    
 }
+
