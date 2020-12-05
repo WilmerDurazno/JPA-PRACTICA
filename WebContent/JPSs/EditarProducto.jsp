@@ -36,7 +36,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<!-- SECCION DE LOS BOTONES DE NAVEGACION -->
-			<div class=col-xs-4>
+			<div class=col-xs-3>
 			<img style="height: 150px; width: 200px; padding-bottom: 20px;" alt="" src="http://localhost:8080/JPA-PRACTICA/diseno/imagenes/adm.png">
 				<div class="dropdown">
 				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -74,19 +74,17 @@
 			</div>
 			
 			<div class=col-xs-4>
-			<div><h2 style="color: white; font-size: 25px">Buscar Producto</h2></div>
-			<div style="height: 30px"></div>
-				<form method="post" action="/JPA-PRACTICA/EliminarProducto?eid=<%=request.getParameter("eid") %>">
+				<h2 style="color: white; font-size: 30px">Editar Producto</h2>
+				<div style="height: 30px"></div>
+				<form method="post" >
 					  <div class="form-group">
-					    <label style="color: white; font-size: 23px" for="nombre">Nombre del Producto</label>
-					    <input style=" font-size: 18px" type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp" placeholder="Ingrese el nombre">
+					    <label style="color: white; font-size: 22px" for="nombre">Nombre del Producto</label>
+					    <input style="font-size: 18px" type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp" placeholder="Ingrese el nombre">
 					  </div>
 					  
-					  <button style=" font-size: 18px" type="submit" class="btn btn-primary">Eliminar</button>
+					  <button style="font-size: 18px" type="submit" class="btn btn-primary">Buscar</button>
 				</form>
 			</div>
-			
-			
 			
 		</div>
 		
@@ -96,8 +94,10 @@
 		
 	</div>
     
-    
-    
+	<div style="height: 465px">
+					<h2></h2>
+	</div>
+
 
 
 
@@ -116,9 +116,6 @@
 
 </body>
 
-<div style="height: 250px">
-				<h2></h2>
-</div>
 
 
 
