@@ -8,13 +8,15 @@ import javax.persistence.*;
  *
  */
 @Entity
-
+@NamedQuery(name = "crearUsuario", query = "INSERT Usuario VALUES(0,:nombre,:apellido,:cedula,:correo,:contrasena,:tipo_usuario,:Empresa_em_id")
+@NamedQuery(name = "eliminarPorNombre", query = "DELETE FROM Producto p WHERE p.nombre = :nombre")
 public class Usuario implements Serializable {
 
 	
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int codigo;
 	private String nombre;
 	private String apellido;
@@ -22,6 +24,8 @@ public class Usuario implements Serializable {
 	private String correo;
 	private String contrasena;
 	private String tipo_usuario;
+	@ManyToOne
+	@JoinColumn
 	private int Empresa_em_id;
 	
 	public Usuario() {
