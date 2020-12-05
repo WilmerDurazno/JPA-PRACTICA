@@ -1,5 +1,7 @@
 package jpa;
 
+import java.util.List;
+
 import javax.persistence.Query;
 import Entidades.Producto;
 import dao.ProductoDAO;
@@ -13,9 +15,22 @@ public class JPAProductoDAO extends JPAGenericDAO<Producto,Integer> implements P
 	@Override
 	public void eliminarPorNombre(String nombre) {
 		Query query = em.createNamedQuery("eliminarPorNombre");
+		em.getTransaction().begin();
 		query.setParameter("nombre", nombre);
 		query.executeUpdate();
+		em.getTransaction().commit();
 	}
+
+	@Override
+	public Producto buscarProducto(String nombre) {
+		// TODO Auto-generated method stub
+		Query query = em.createQuery("SELECT p FROM Producto p WHERE p.nombre = :nombre");
+		query.setParameter("nombre", nombre);
+		Producto p = (Producto) query.getSingleResult();
+		//em.getTransaction().commit();
+		return p;
+	}
+
 	
 	
 }
