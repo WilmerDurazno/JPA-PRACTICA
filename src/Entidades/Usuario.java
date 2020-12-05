@@ -8,8 +8,6 @@ import javax.persistence.*;
  *
  */
 @Entity
-@NamedQuery(name = "crearUsuario", query = "INSERT Usuario VALUES(0,:nombre,:apellido,:cedula,:correo,:contrasena,:tipo_usuario,:Empresa_em_id")
-@NamedQuery(name = "eliminarPorNombre", query = "DELETE FROM Producto p WHERE p.nombre = :nombre")
 public class Usuario implements Serializable {
 
 	

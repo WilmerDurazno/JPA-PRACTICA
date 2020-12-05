@@ -16,5 +16,5 @@ public abstract class DAOFactory {
     
     public abstract EmpresaDAO getEmpresaDAO();
     
-    public abstract UsuarioDAO usuarioDAO();
+    public abstract UsuarioDAO getUsuarioDAO();
 }
