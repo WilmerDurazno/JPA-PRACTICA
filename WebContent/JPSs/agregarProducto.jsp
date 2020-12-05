@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" >    
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost:8080/JPA-PRACTICA/diseno/css/diseno.css">
+    <link rel="stylesheet" href=" http://localhost:8080/JPA-PRACTICA/diseno/css/diseno.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -17,17 +17,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <title>Ventana Administrador</title>
-	<STYLE type="text/css">
-  		A { padding-left: 1150px}
- 	</STYLE>
+    <title>AgregarProducto</title>
+
 </head>
 <body style="background-color: #575757;">
 
     <header class="container-fluid" id="cabecera">
         <div class="row" >
             <div class="col-xs-11">
-                <img src="http://localhost:8080/JPA-PRACTICA/diseno/imagenes/logos2.png"  id="logo">
+                <img src=" http://localhost:8080/JPA-PRACTICA/diseno/imagenes/logos2.png"  id="logo">
             </div>
       
         </div>
@@ -38,8 +36,8 @@
 	<div class="container-fluid">
 		<div class="row">
 			<!-- SECCION DE LOS BOTONES DE NAVEGACION -->
-			<div class=col-xs-2>
-				<img style="height: 150px; width: 200px; padding-bottom: 20px;" alt="" src="http://localhost:8080/JPA-PRACTICA/diseno/imagenes/adm.png">
+			<div class=col-xs-3>
+			<img style="height: 150px; width: 200px; padding-bottom: 20px;" alt="" src="http://localhost:8080/JPA-PRACTICA/diseno/imagenes/adm.png">
 				<div class="dropdown">
 				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				    <small style = "font-size: 15px" >PRODUCTOS</small>
@@ -61,8 +59,6 @@
 				    <a style = "font-size: 15px" class="dropdown-item" href="http://localhost:8080/JPA-PRACTICA/Despachar?eid=<%=request.getParameter("eid") %>&cabecera=n&bandera=0">Atender Ordenes</a>
 				  </div>
 				</div>
-				
-				
 				<!--
 				<div class="dropdown">
 				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,24 +71,41 @@
 				  </div>
 				</div>
 				-->
+		</div>
+		<div class=col-xs-4>
+				<div>
+				</div>
+				<div><h2 style="color: white; font-size: 25px">Agregar Producto</h2></div>
+				<div style="height: 30px"></div>
+				<form method="post" action="/JPA-PRACTICA/AnadirProductos?eid=<%=request.getParameter("eid") %>">
+					  <div class="form-group">
+					    <label style="color: white; font-size: 22px" for="nombre">Nombre del Producto</label>
+					    <input style=" font-size: 18px" type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp" placeholder="Ingrese el nombre">
+					  </div>
+					  <div class="form-group">
+					    <label style="color: white; font-size: 22px" for="descripcion">Descripcion</label>
+					    <input style=" font-size: 18px" type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Ingrese la Descripcion">
+					  </div>
+					  <div class="form-group">
+					    <label style="color: white; font-size: 22px" for="precio">Precio</label>
+					    <input style=" font-size: 18px" type="text" class="form-control" id="precio" name="precio" placeholder="Ingrese la Descripcion">
+					  </div>
+					  <div class="form-group">
+					    <label style="color: white; font-size: 22px" for="exampleFormControlSelect1">Categoria</label>
+					    <select style=" font-size: 18px" class="form-control" id="exampleFormControlSelect1" name="cate">
+					      <option style=" font-size: 18px">Oficina</option>
+					      <option style=" font-size: 18px">Papeleria</option>
+					      <option style=" font-size: 18px">Tecnologia</option>
+					    </select>
+					  </div>
+					 
+					  <button style=" font-size: 18px" type="Agregar" class="btn btn-primary">Agregar</button>
+				</form>
 			</div>
 			
-			
-			
-		</div>
-		
-		
-		
-		
-		
 	</div>
     
     
-   
-    
-
-
-
     
    
 
@@ -108,9 +121,10 @@
 
 </body>
 
-<div style="height: 340px">
-</div>
 
+<div style="height: 180px">
+				<h2></h2>
+</div>
 
 
 

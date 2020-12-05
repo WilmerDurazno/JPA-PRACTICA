@@ -38,8 +38,8 @@
 	<div class="container-fluid">
 		<div class="row">
 			<!-- SECCION DE LOS BOTONES DE NAVEGACION -->
-			<div class=col-xs-2>
-				<img style="height: 150px; width: 200px; padding-bottom: 20px;" alt="" src="http://localhost:8080/JPA-PRACTICA/diseno/imagenes/adm.png">
+			<div class=col-xs-4>
+			<img style="height: 150px; width: 200px; padding-bottom: 20px;" alt="" src="http://localhost:8080/JPA-PRACTICA/diseno/imagenes/adm.png">
 				<div class="dropdown">
 				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				    <small style = "font-size: 15px" >PRODUCTOS</small>
@@ -61,8 +61,6 @@
 				    <a style = "font-size: 15px" class="dropdown-item" href="http://localhost:8080/JPA-PRACTICA/Despachar?eid=<%=request.getParameter("eid") %>&cabecera=n&bandera=0">Atender Ordenes</a>
 				  </div>
 				</div>
-				
-				
 				<!--
 				<div class="dropdown">
 				  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -77,6 +75,19 @@
 				-->
 			</div>
 			
+			<div class=col-xs-4>
+			<div><h2 style="color: white; font-size: 25px">Buscar Producto</h2></div>
+			<div style="height: 30px"></div>
+				<form method="post" action="/JPA-PRACTICA/EliminarProducto?eid=<%=request.getParameter("eid") %>">
+					  <div class="form-group">
+					    <label style="color: white; font-size: 23px" for="nombre">Nombre del Producto</label>
+					    <input style=" font-size: 18px" type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp" placeholder="Ingrese el nombre">
+					  </div>
+					  
+					  <button style=" font-size: 18px" type="submit" class="btn btn-primary">Eliminar</button>
+				</form>
+			</div>
+			
 			
 			
 		</div>
@@ -88,7 +99,6 @@
 	</div>
     
     
-   
     
 
 
@@ -108,8 +118,10 @@
 
 </body>
 
-<div style="height: 340px">
+<div style="height: 250px">
+				<h2></h2>
 </div>
+
 
 
 

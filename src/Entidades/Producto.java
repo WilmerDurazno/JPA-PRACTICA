@@ -8,7 +8,7 @@ import javax.persistence.*;
  *
  */
 @Entity
-
+@NamedQuery(name = "eliminarPorNombre", query = "DELETE FROM Producto p WHERE p.nombre = :nombre")
 public class Producto implements Serializable {
 
 	
