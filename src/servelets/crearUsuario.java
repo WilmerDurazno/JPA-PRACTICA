@@ -48,7 +48,7 @@ public class crearUsuario extends HttpServlet {
 		
 		Empresa em = ed.read(codigo_empresa);
 		 
-		Usuario user = new Usuario(0,nombre,apellido,cedula,correo,contrasena,tipo_usuario,codigo_empresa);
+		Usuario user = new Usuario(0,nombre,apellido,cedula,correo,contrasena,tipo_usuario,em);
 		
 		try {
 			ud.create(user);
