@@ -1,80 +1,65 @@
 #cabecera {
-    background-color: #2A2A2A;
-    font-style:inherit;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    height: 100px;
+	background-color: #2A2A2A;
+	font-style: inherit;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100px;
 }
 
-#buscadorCabecera{
-    margin: 0px;
-    padding-top: 30px;
-    padding-right: 15px;
-    
-    
+#buscadorCabecera {
+	margin: 0px;
+	padding-top: 30px;
+	padding-right: 15px;
 }
 
 #logo {
-    margin: 0px;
-    padding: 0px;
-    width: 400px;
-    height: 100px;
-    background-color:#2A2A2A;
+	margin: 0px;
+	padding: 0px;
+	width: 400px;
+	height: 100px;
+	background-color: #2A2A2A;
 }
 
-#buscador{
-    background-color: aqua ;
-    color: white;
-    
+#buscador {
+	background-color: aqua;
+	color: white;
 }
 
-
-.tabla{
-    background-color: #3B3535;
-    color: #DDC7C7;
-    
+.tabla {
+	background-color: #3B3535;
+	color: #DDC7C7;
 }
-
 
 #foto {
-    height: 300px;
+	height: 300px;
 }
 
-.carousel, .carousel-inner > .item > img {
-    height: 300px;
-    
-  }
+.carousel, .carousel-inner>.item>img {
+	height: 300px;
+}
 
+.sli {
+	padding: 10px;
+}
 
-.sli{
-      padding: 10px;
-  }
-
-  table.table-hover tbody tr th:hover  {
-    background-color: #737373; 
-    color: white;
+table.table-hover tbody tr th:hover {
+	background-color: #737373;
+	color: white;
 }
 
 table th:hover {
-    background-color: #737373; 
-    color: white;
-  }
+	background-color: #737373;
+	color: white;
+}
 
-
-
-#productoFoto{
-    height: 400px;
-    width: 200px;
-    
+#productoFoto {
+	height: 400px;
+	width: 200px;
 }
 
 #datitos {
-    color: white;
-    margin: 5px;
-    padding: 10px;
+	color: white;
+	margin: 5px;
+	padding: 10px;
 }
-
-
-
-
