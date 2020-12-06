@@ -6,6 +6,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import Entidades.Empresa;
 import Entidades.Usuario;
 import dao.DAOFactory;
 import dao.UsuarioDAO;
@@ -26,7 +28,7 @@ public class crearUsuario extends HttpServlet {
 		String cedula = request.getParameter("cedula");
 		String correo = request.getParameter("correo");
 		String contrasena = request.getParameter("contrasena");
-		String tipo_usuario = request.getParameter("tipo_usuario");
+		String tipo_usuario = "A";
 		String empresa = request.getParameter("empresa");
 		int codigo_empresa = 0;
 		
@@ -43,8 +45,10 @@ public class crearUsuario extends HttpServlet {
 		
 		UsuarioDAO ud = DAOFactory.getFactory().getUsuarioDAO();
 		EmpresaDAO ed = DAOFactory.getFactory().getEmpresaDAO();
-		//Tienes que mandar el objeto no solo el dato del id por eso da error al cargar al inicio 
-		Usuario user = new Usuario(0,nombre,apellido,cedula,correo,contrasena,tipo_usuario,codigo_empresa);
+		
+		Empresa em = ed.read(codigo_empresa);
+		 
+		Usuario user = new Usuario(0,nombre,apellido,cedula,correo,contrasena,tipo_usuario,em);
 		
 		try {
 			ud.create(user);
