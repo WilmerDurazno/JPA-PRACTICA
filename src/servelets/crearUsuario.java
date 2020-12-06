@@ -34,7 +34,7 @@ public class crearUsuario extends HttpServlet {
 		
 		//OBTENIENDO EL CODIGO DE LA EMPRESA. 
 		if(empresa.equals("ONERON")) {
-			codigo_empresa = 4;
+			codigo_empresa = 1;
 		}else if(empresa.equals("Importsum")) {
 			codigo_empresa = 5;
 		}else if(empresa.equals("Papelesa")) {

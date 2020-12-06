@@ -2,6 +2,7 @@ package jpa;
 
 
 import dao.CategoriaDAO;
+import dao.CompraDAO;
 import dao.DAOFactory;
 import dao.EmpresaDAO;
 import dao.ProductoDAO;
@@ -30,6 +31,12 @@ public class JPADAOFactory extends DAOFactory{
 	public UsuarioDAO getUsuarioDAO() {
 		// TODO Auto-generated method stub
 		return new JPAUsuarioDAO();
+	}
+
+	@Override
+	public CompraDAO getCompraDAO() {
+		// TODO Auto-generated method stub
+		return new JPACompraDAO();
 	}
 	
 	
