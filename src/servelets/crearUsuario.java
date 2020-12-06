@@ -31,6 +31,7 @@ public class crearUsuario extends HttpServlet {
 		String tipo_usuario = "A";
 		String empresa = request.getParameter("empresa");
 		int codigo_empresa = 0;
+		System.out.println("holamundomundial");
 		
 		//OBTENIENDO EL CODIGO DE LA EMPRESA. 
 		if(empresa.equals("ONERON")) {
