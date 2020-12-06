@@ -24,7 +24,8 @@ public class Empresa implements Serializable {
 	private String direccion;
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "em_pro_id" )
 	private List<Producto> productos;
-	
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "Empresa_em_id")
+	private List<Usuario> usuarios;
 	public Empresa() {
 		//CONSTRUCTOR OBLIGATORIO;
 	}
