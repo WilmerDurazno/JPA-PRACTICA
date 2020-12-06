@@ -26,7 +26,10 @@ public class Producto implements Serializable {
 	@ManyToOne
 	@JoinColumn
 	private Empresa em_pro_id;
-
+	@OneToOne(cascade = CascadeType.ALL, mappedBy = "pro_com_id")
+	private Compra compra;
+	
+	
 	public Producto() {
 		super();
 	}

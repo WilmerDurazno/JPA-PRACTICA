@@ -1,6 +1,8 @@
 package Entidades;
 
 import java.io.Serializable;
+import java.util.List;
+
 import javax.persistence.*;
 
 /**
@@ -27,6 +29,11 @@ public class Usuario implements Serializable {
 	@ManyToOne
 	@JoinColumn
 	private Empresa em_pro_id;
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "us_com_id")
+	private List<Compra> copras;
+	
+	
+
 	
 	public Usuario() {
 		super();
