@@ -26,14 +26,14 @@ public class Usuario implements Serializable {
 	private String tipo_usuario;
 	@ManyToOne
 	@JoinColumn
-	private Empresa Empresa_em_id;
+	private Empresa em_pro_id;
 	
 	public Usuario() {
-		//CONSTRUCTOR OBLIGATORIO;
+		super();
 	}
 
 	public Usuario(int codigo, String nombre, String apellido, String cedula, String correo, String contrasena,
-			String tipo_usuario, Empresa empresa_em_id) {
+			String tipo_usuario, Empresa em_pro_id) {
 		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
@@ -42,7 +42,7 @@ public class Usuario implements Serializable {
 		this.correo = correo;
 		this.contrasena = contrasena;
 		this.tipo_usuario = tipo_usuario;
-		Empresa_em_id = empresa_em_id;
+		this.em_pro_id = em_pro_id;
 	}
 	
 	public int getCodigo() {
@@ -101,19 +101,19 @@ public class Usuario implements Serializable {
 		this.tipo_usuario = tipo_usuario;
 	}
 
-	public Empresa getEmpresa_em_id() {
-		return Empresa_em_id;
+	public Empresa getEm_pro_id() {
+		return em_pro_id;
 	}
 
-	public void setEmpresa_em_id(Empresa empresa_em_id) {
-		Empresa_em_id = empresa_em_id;
+	public void setEm_pro_id(Empresa em_pro_id) {
+		em_pro_id = em_pro_id;
 	}
 
 	@Override
 	public String toString() {
 		return "Usuario [codigo=" + codigo + ", nombre=" + nombre + ", apellido=" + apellido + ", cedula=" + cedula
 				+ ", correo=" + correo + ", contrasena=" + contrasena + ", tipo_usuario=" + tipo_usuario
-				+ ", Empresa_em_id=" + Empresa_em_id + "]";
+				+ ", Em_pro_id=" + em_pro_id + "]";
 	}
    
 }

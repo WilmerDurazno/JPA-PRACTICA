@@ -34,11 +34,11 @@ public class crearUsuario extends HttpServlet {
 		
 		//OBTENIENDO EL CODIGO DE LA EMPRESA. 
 		if(empresa.equals("ONERON")) {
-			codigo_empresa = 1;
+			codigo_empresa = 4;
 		}else if(empresa.equals("Importsum")) {
-			codigo_empresa = 2;
+			codigo_empresa = 5;
 		}else if(empresa.equals("Papelesa")) {
-			codigo_empresa = 3;
+			codigo_empresa = 6;
 		}else {
 			System.out.println("Error al recuperar el codigo de la empresa...");
 		}
@@ -48,7 +48,7 @@ public class crearUsuario extends HttpServlet {
 		
 		Empresa em = ed.read(codigo_empresa);
 		 
-		Usuario user = new Usuario(0,nombre,apellido,cedula,correo,contrasena,tipo_usuario,em);
+		Usuario user = new Usuario(0,nombre,apellido,cedula,correo,contrasena,tipo_usuario,codigo_empresa);
 		
 		try {
 			ud.create(user);
