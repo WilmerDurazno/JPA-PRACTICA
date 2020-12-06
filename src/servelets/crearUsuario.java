@@ -54,8 +54,16 @@ public class crearUsuario extends HttpServlet {
 		try {
 			ud.create(user);
 			System.out.println("Usuario insertado en la base de datos correctamente...");
+			response.getWriter().print("<html><head><title>Registro Usuario</title></head>"
+					 + "<body style=\"background-color: #575757;\">"
+					 + "<h2>Bienvenid@ " + user.getNombre() + " " + user.getApellido() + ", es un gusto contar contigo.</h2>"
+					 + "<p>En nuestro sistema podras solicitar tus compras.</p>"
+					 + "<a href=\"http://localhost:8080/PracticaServJSPyJDBC/public/login.html\">"
+					 + "Para iniciar con tus requerimientos de compras, inicia sesion aqui !!</a>"
+					 + "</body>");
 		}catch(Exception e) {
 			System.out.println("Error en la inserción: " + e.getMessage());
+			response.sendRedirect("http://localhost:8080/PracticaServJSPyJDBC/index.html");
 		}
 		
 	}
