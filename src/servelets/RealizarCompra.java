@@ -59,11 +59,12 @@ public class RealizarCompra extends HttpServlet {
 			getServletContext().getRequestDispatcher("/JPSs/CompraProductos.jsp").forward(request, response);
 			
 		}catch(Exception e) {
-			//url = "/JPSs/VentanaUsuario.jsp";
+			
 			getServletContext().getRequestDispatcher("/JPSs/VentanaUsuario.jsp").forward(request, response);
 			System.out.println("Error: " + e.getMessage());
+		
 		}
-		//getServletContext().getRequestDispatcher(url).forward(request, response);
+		
 	} 
 
 }

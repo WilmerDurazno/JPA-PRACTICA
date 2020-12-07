@@ -37,6 +37,14 @@ public class JPAProductoDAO extends JPAGenericDAO<Producto,Integer> implements P
 		return listp;
 	}
 
+	@Override
+	public Producto buscarProductoPorDescripcion(String descripcion) {
+		Query query = em.createQuery("SELECT p FROM Producto p WHERE p.descripcion = :descripcion");
+		query.setParameter("descripcion", descripcion);
+		Producto p = (Producto) query.getSingleResult();
+		return p;
+	}
+
 	
 	
 }

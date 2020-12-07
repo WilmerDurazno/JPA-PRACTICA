@@ -81,7 +81,7 @@
 			//var correo = urlParams.keys();
 			var email = parametroURL('correo');
 			$('#resultado').html('Contenido: '+ email);
-			window.location.assign('http://localhost:8080/PracticaServJSPyJDBC/ProcesarCompra?carrito='+colores+"&correo="+email);
+			window.location.assign('http://localhost:8080/JPA-PRACTICA/ProcesarCompra?carrito='+colores+"&correo="+email);
 		}
 		function parametroURL(_par) {
 			  var _p = null;
