@@ -7,4 +7,6 @@ import Entidades.Compra;
 public interface CompraDAO extends GenericDAO<Compra, Integer> {
 	
 	public List<Compra> listarCompras(int idEmpresa);
+	
+	public List<Compra> listarComprasPorUsuario(int idUsuario);
 }

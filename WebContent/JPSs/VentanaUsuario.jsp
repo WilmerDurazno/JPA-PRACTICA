@@ -21,27 +21,24 @@
     <STYLE type="text/css">
   		H2 { text-align: center}
   		P { text-align: center}
-  		A { padding-left: 1150px}
+  		/*A { padding-left: 1150px}*/
  	</STYLE>
 
 </head>
 <body style="background-color: #575757;">
 
-    <header class="container-fluid" id="cabecera">
+    <header style="background-color: rgb(42,42,42);" class="container-fluid" id="cabecera">
         <div class="row" >
-            <div class="col-xs-10">
-                <img src="http://localhost:8080/PracticaServJSPyJDBC/diseno/imagenes/l1.png"  id="logo">
-            </div>
-            <div class=col-xs-2>
-        	<a style="color: white; font-size: 20px;" href="http://localhost:8080/JPA-PRACTICA/ServletDestroy">Cerrar Sesion</a>
-        </div>
+            <div class="col-xs-11">
+                <img style="height: 80px; width: 350px; margin-bottom: 10px; margin-top: 10px;" src="http://localhost:8080/JPA-PRACTICA/diseno/imagenes/l1.png"  id="logo">
+            </div>        
         </div>
     </header>
     
 	<div class="container-fluid">
 		<div class="row">
 			<div class=col-xs-4>
-				<img style="height: 150px; width: 200px; padding-bottom: 20px;" alt="" src="http://localhost:8080/PracticaServJSPyJDBC/diseno/imagenes/usu.png">
+				<img style="height: 150px; width: 200px; padding-bottom: 20px;" alt="" src="http://localhost:8080/JPA-PRACTICA/diseno/imagenes/usu.png">
 				<div class="dropdown">
 					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				    	<small style = "font-size: 15px" >PRODUCTOS</small>
@@ -62,13 +59,9 @@
     <c:set var="apellido" scope="request" value="${param.apellido}"/>
     <c:set var="cedula" scope="request" value="${param.cedula}"/>
     
-    <br>
-    <br>
-    <br>
     <h2 style="color: white; font-size: 35px;">Hola ${nombre}, bienvenid@ a nuestro sitio web</h2>
 
 	<!-- AQUI VA LA IMAGEN -->
-	<br>
 	<br>
 	<p style="color: white; font-size: 20px;" id="label"><strong style="color: rgb(236,72,113);">Nombre:</strong> ${nombre}</p>
 	<p style="color: white; font-size: 20px;" id="label"><strong style="color: rgb(236,72,113);">Apellido:</strong> ${apellido}</p>
@@ -84,9 +77,9 @@
     
 </body>
 
-<div style="height: 590px">
+<!-- <div style="height: 590px">
 	<h2></h2>
-</div>
+</div>-->
 
 <footer class="page-footer font-small  darken-3 s" style="background-color: #393939; padding-top: 1opx;">
 

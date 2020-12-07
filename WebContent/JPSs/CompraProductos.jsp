@@ -24,10 +24,10 @@
 </head>
 <body style="background-color: #575757;">
 	<c:set var="lista" scope="request" value="${productos}" />
-	<header class="container-fluid" id="cabecera">
+	<header style="background-color: rgb(42,42,42);" class="container-fluid" id="cabecera">
         <div class="row" >
             <div class="col-xs-11">
-                <img src="http://localhost:8080/PracticaServJSPyJDBC/diseno/imagenes/l1.png"  id="logo">
+                <img style="height: 80px; width: 350px; margin-bottom: 10px; margin-top: 10px;" src="http://localhost:8080/JPA-PRACTICA/diseno/imagenes/l1.png"  id="logo">
             </div>
         </div>
     </header>

@@ -19,5 +19,13 @@ public class JPACompraDAO extends JPAGenericDAO<Compra, Integer> implements Comp
 		List<Compra> listc = query.getResultList();
 		return listc;
 	}
+
+	@Override
+	public List<Compra> listarComprasPorUsuario(int idUsuario) {
+		Query query = em.createQuery("Select c From Compra c WHERE c.us_com_id.codigo = :idUsuario");
+		query.setParameter("idUsuario", idUsuario);
+		List<Compra> listc = query.getResultList();
+		return listc;
+	}
 	
 }
