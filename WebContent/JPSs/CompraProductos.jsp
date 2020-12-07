@@ -46,7 +46,7 @@
 				</tr>
 				<c:forEach var="p" items="${lista}">
 					<tr scope="row">
-						<td style="font-size: 18px">${p.id}</td>
+						<td style="font-size: 18px">${p.codigo}</td>
 						<td style="font-size: 18px">${p.nombre}</td>
 						<td style="font-size: 18px">${p.precio}</td>
 						<td style="font-size: 18px">${p.descripcion}</td>

@@ -46,25 +46,24 @@ public class RealizarCompra extends HttpServlet {
 		String url = null;
 		
 		try {
-			
-			//usuario = usuarioDao.findUser(correo, contra);
+						
 			usuario = usuarioDao.buscarUsuario(correo);
 			
 			int codigo_empresa = usuario.getEm_pro_id().getCodigo();
 			
-			listaProducto = (List<Producto>) productoDao.buscarProductoPorEmpresa(codigo_empresa);
+			listaProducto = productoDao.listarProducto(codigo_empresa);
 			
 			System.out.println("Tamaño de la lista: " + listaProducto.size());
 			request.setAttribute("productos", listaProducto);
 			
-			url = "/JPSs/CompraProductos.jsp";
-			//response.sendRedirect("http://localhost:8080/PracticaServJSPyJDBC/JPSs/CompraProductos.jsp");
+			getServletContext().getRequestDispatcher("/JPSs/CompraProductos.jsp").forward(request, response);
 			
 		}catch(Exception e) {
-			url = "/JPSs/VentanaUsuario.jsp";
+			//url = "/JPSs/VentanaUsuario.jsp";
+			getServletContext().getRequestDispatcher("/JPSs/VentanaUsuario.jsp").forward(request, response);
 			System.out.println("Error: " + e.getMessage());
 		}
-		getServletContext().getRequestDispatcher(url).forward(request, response);
+		//getServletContext().getRequestDispatcher(url).forward(request, response);
 	} 
 
 }
