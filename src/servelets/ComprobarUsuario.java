@@ -41,13 +41,13 @@ public class ComprobarUsuario extends HttpServlet {
 				
 				request.getSession().setAttribute("Sesion", "Logeado");
 				System.out.println("El usuario: "+user.getCorreo()+" es un usuario sin priviliegios...");
-				response.sendRedirect("http://localhost:8080/JPA-PRACTICA/JPSs/VentanaUsuario.jsp");
+				response.sendRedirect("http://localhost:8080/JPA-PRACTICA/JPSs/VentanaUsuario.jsp?correo="+email+"&contra="+contrasena+"&nombre="+nombre_user+"&apellido="+apellido_user+"&cedula="+cedula_user);
 				
 			}else if(tipo_user.equals("A")) {
 				
 				request.getSession().setAttribute("SesionAdmin", "LogeadoAdmin");
 				System.out.println("El usuario: "+user.getCorreo()+" es administrador...");
-				response.sendRedirect("http://localhost:8080/JPA-PRACTICA/JPSs/VentanaAdmin.jsp");
+				response.sendRedirect("http://localhost:8080/JPA-PRACTICA/JPSs/VentanaAdmin.jsp?eid="+user.getEm_pro_id().getCodigo());
 				
 			}else {
 				

@@ -33,7 +33,7 @@
                 <img src="http://localhost:8080/PracticaServJSPyJDBC/diseno/imagenes/l1.png"  id="logo">
             </div>
             <div class=col-xs-2>
-        	<a style="color: white; font-size: 20px;" href="http://localhost:8080/PracticaServJSPyJDBC/ServletDestroy">Cerrar Sesion</a>
+        	<a style="color: white; font-size: 20px;" href="http://localhost:8080/JPA-PRACTICA/ServletDestroy">Cerrar Sesion</a>
         </div>
         </div>
     </header>
@@ -47,7 +47,7 @@
 				    	<small style = "font-size: 15px" >PRODUCTOS</small>
 				  	</button>
 				  	<div  class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-				    	<a style = "font-size: 15px" class="dropdown-item" href="http://localhost:8080/PracticaServJSPyJDBC/RealizarCompra?correo=<%=request.getParameter("correo") %>&contra=<%=request.getParameter("contra")%>">Realizar Pedido</a>
+				    	<a style = "font-size: 15px" class="dropdown-item" href="http://localhost:8080/JPA-PRACTICA/RealizarCompra?correo=<%=request.getParameter("correo") %>&contra=<%=request.getParameter("contra")%>">Realizar Pedido</a>
 				    	<a style = "font-size: 15px" class="dropdown-item" href="http://localhost:8080/PracticaServJSPyJDBC/ComprasUsuario?correo=<%=request.getParameter("correo") %>&contra=<%=request.getParameter("contra")%>">Visualizar Compras</a>
 				    	<a style = "font-size: 15px" class="dropdown-item" href="http://localhost:8080/PracticaServJSPyJDBC/ServletDestroy">Cerrar Sesion</a>
 				  	</div>

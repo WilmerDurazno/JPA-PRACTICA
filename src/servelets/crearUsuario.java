@@ -28,7 +28,7 @@ public class crearUsuario extends HttpServlet {
 		String cedula = request.getParameter("cedula");
 		String correo = request.getParameter("correo");
 		String contrasena = request.getParameter("contrasena");
-		String tipo_usuario = "A";
+		String tipo_usuario = "U";
 		String empresa = request.getParameter("empresa");
 		int codigo_empresa = 0;
 		System.out.println("holamundomundial");
@@ -37,9 +37,9 @@ public class crearUsuario extends HttpServlet {
 		if(empresa.equals("ONERON")) {
 			codigo_empresa = 1;
 		}else if(empresa.equals("Importsum")) {
-			codigo_empresa = 5;
+			codigo_empresa = 2;
 		}else if(empresa.equals("Papelesa")) {
-			codigo_empresa = 6;
+			codigo_empresa = 3;
 		}else {
 			System.out.println("Error al recuperar el codigo de la empresa...");
 		}
