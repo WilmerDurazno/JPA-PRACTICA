@@ -58,7 +58,7 @@ public class crearUsuario extends HttpServlet {
 					 + "<body style=\"background-color: #575757;\">"
 					 + "<h2>Bienvenid@ " + user.getNombre() + " " + user.getApellido() + ", es un gusto contar contigo.</h2>"
 					 + "<p>En nuestro sistema podras solicitar tus compras.</p>"
-					 + "<a href=\"http://localhost:8080/PracticaServJSPyJDBC/public/login.html\">"
+					 + "<a href=\"http://localhost:8080/JPA-PRACTICA/public/login.html\">"
 					 + "Para iniciar con tus requerimientos de compras, inicia sesion aqui !!</a>"
 					 + "</body>");
 		}catch(Exception e) {
