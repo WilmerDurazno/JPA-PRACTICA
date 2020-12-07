@@ -20,20 +20,22 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <title>Mis Compras</title>
-
+	<STYLE type="text/css">
+  		H1 { text-align: center}
+ 	</STYLE>
 </head>
 <body style="background-color: #575757;">
 
-    <header class="container-fluid" id="cabecera">
+    <header style="background-color: rgb(42,42,42);" class="container-fluid" id="cabecera">
         <div class="row" >
             <div class="col-xs-11">
-                <img src="http://localhost:8080/PracticaServJSPyJDBC/diseno/imagenes/l1.png"  id="logo">
+                <img style="height: 80px; width: 350px; margin-bottom: 10px; margin-top: 10px;" src="http://localhost:8080/JPA-PRACTICA/diseno/imagenes/l1.png"  id="logo">
             </div>
         </div>
     </header>
     
 	<c:set var="lista" scope="request" value="${compras}" />
-	<h1 style="font-size: 25px; color: white; ">Mis Compras</h1>
+	<BR><h1 style="font-size: 25px; color: white; ">Mis Compras</h1>
 	<div style="widh: 30px"></div>
 	
 	<div class="row">
@@ -45,19 +47,21 @@
 					<td scope="col" style="font-size: 25px"><strong>Fecha</strong></td>
 					<td scope="col" style="font-size: 25px"><strong>Estado</strong></td>
 					<td scope="col" style="font-size: 25px"><strong>Producto</strong></td>
+					<td scope="col" style="font-size: 25px"><strong>Precio</strong></td>
 				</tr>
 				<c:forEach var="c" items="${lista}">
 					<tr scope="row">
-						<td style="font-size: 18px">${c.id}</td>
+						<td style="font-size: 18px">${c.codigo}</td>
 						<td style="font-size: 18px">${c.fecha}</td>
 						<td style="font-size: 18px">${c.estado}</td>
-						<td style="font-size: 18px">${c.producto_id}</td>
+						<td style="font-size: 18px">${c.pro_com_id.nombre}</td>
+						<td style="font-size: 18px">${c.pro_com_id.precio}</td>
 					</tr>
 				</c:forEach>
 			</table>
 		</div>
 		<div class="col align-self-end"></div>
-	
+		
 	</div>
 	
  <!-- Latest compiled and minified JavaScript -->
@@ -71,13 +75,6 @@
 
 
 </body>
-
-
-<div style="height: 400px">
-				<h2></h2>
-</div>
-
-
 
 <!-- Footer -->
 <footer class="page-footer font-small  darken-3 s" style="background-color: #393939; padding-top: 1opx;">
