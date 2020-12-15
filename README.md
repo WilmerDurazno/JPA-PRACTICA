@@ -34,64 +34,35 @@ paginina Inicial Admininistrador
 ![Imagen9](https://user-images.githubusercontent.com/34029478/102230355-c717d880-3eba-11eb-863f-b3d2b5b03fa7.png)
 ![Imagen10](https://user-images.githubusercontent.com/34029478/102230361-c97a3280-3eba-11eb-965a-d810d7c5e776.png)
 ![Imagen11](https://user-images.githubusercontent.com/34029478/102230363-ca12c900-3eba-11eb-8caa-a2d457a26553.png)
+
+
 USUARIO
 
 Una vez iniciado sesión el usuario puede hacer sus respectivos pedidos.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Imagen12](https://user-images.githubusercontent.com/34029478/102230366-caab5f80-3eba-11eb-9eb3-1fe62a3b23c3.png)
+![Imagen13](https://user-images.githubusercontent.com/34029478/102230368-cbdc8c80-3eba-11eb-8a85-71e108eb063f.png)
 
 
 Al mismo tiempo el Usuario puede lista de requerimientos de compra.
 
-
-
-
-
-
-
-
-
-
-
+![Imagen14](https://user-images.githubusercontent.com/34029478/102230370-cc752300-3eba-11eb-8be3-4b01bfc054ea.png)
 
 
 ADMINISTRADOR
 
 Una vez el administrador inicie sesión podrá hacer Registrar los productos.
 
-
-
-
-
-
-
-
-
-
-
+![Imagen15](https://user-images.githubusercontent.com/34029478/102230371-cc752300-3eba-11eb-9ff3-96db11807011.png)
+![Imagen16](https://user-images.githubusercontent.com/34029478/102230378-cda65000-3eba-11eb-8a09-78a141cc025f.png)
 
 
 
 Así mismo el Administrador puede modificar los productos por lo cual se va a modificar a continuación el producto lámparas.
 
+![Imagen17](https://user-images.githubusercontent.com/34029478/102230382-cf701380-3eba-11eb-98be-a1c64bf89242.png)
+![Imagen18](https://user-images.githubusercontent.com/34029478/102230386-d008aa00-3eba-11eb-9871-95f0bc04941b.png)
 
-
-
-
-
-
+![Imagen19](https://user-images.githubusercontent.com/34029478/102230390-d0a14080-3eba-11eb-85fe-c5a5d3641e17.png)
 
 
 
