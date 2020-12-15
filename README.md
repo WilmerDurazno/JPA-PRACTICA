@@ -65,57 +65,18 @@ Así mismo el Administrador puede modificar los productos por lo cual se va a mo
 ![Imagen19](https://user-images.githubusercontent.com/34029478/102230390-d0a14080-3eba-11eb-85fe-c5a5d3641e17.png)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 El Administrador también puede hacer una búsqueda de los productos.
 
-
-
-
-
-
-
-
-
-
+![Imagen20](https://user-images.githubusercontent.com/34029478/102232167-ca13c880-3ebc-11eb-927a-96a8c6ffe1f9.png)
+![Imagen21](https://user-images.githubusercontent.com/34029478/102232171-caac5f00-3ebc-11eb-8027-ae201b61f084.png)
 
 
 También el Administrador puede eliminar todos los productos que desee.
 
+![Imagen22](https://user-images.githubusercontent.com/34029478/102232257-e1eb4c80-3ebc-11eb-994e-1fccd2c46801.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Imagen23](https://user-images.githubusercontent.com/34029478/102232263-e3b51000-3ebc-11eb-9228-80e5de198b6d.png)
+![Imagen24](https://user-images.githubusercontent.com/34029478/102232274-e7489700-3ebc-11eb-85da-76b62f6f20c0.png)
 
 Y por ultimo el Administrador puede Listar todos los productos de la Empresa.
 
