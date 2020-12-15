@@ -152,9 +152,9 @@ RECOMENDACIONES:
 
 Firma de estudiante:
 
-
-
-
+![Imagen36](https://user-images.githubusercontent.com/34029478/102233568-6be7e500-3ebe-11eb-9fee-6da78b74440f.png)
+![Imagen37](https://user-images.githubusercontent.com/34029478/102233574-6d191200-3ebe-11eb-96f2-36fb366a4032.png)
+![Imagen38](https://user-images.githubusercontent.com/34029478/102233560-69858b00-3ebe-11eb-8b75-f5bb06c710b8.jpg)
 
 
 
