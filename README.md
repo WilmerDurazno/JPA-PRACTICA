@@ -80,142 +80,43 @@ También el Administrador puede eliminar todos los productos que desee.
 
 Y por ultimo el Administrador puede Listar todos los productos de la Empresa.
 
-
-
-
-
-
-
-
-
-
-
-
-
+![Imagen25](https://user-images.githubusercontent.com/34029478/102232281-e7e12d80-3ebc-11eb-97fd-81e0319a0d95.png)
 
 
 Cuando el Usuario o cliente realiza su compra el Administrador puede Aprobar o Rechazar la compra del cliente.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Imagen26](https://user-images.githubusercontent.com/34029478/102232285-e9125a80-3ebc-11eb-8efa-c401898d7c25.png)
 
 
 También el Administrador puede visualizar los pedidos de los clientes.
 
-
-
-
-
-
-
-
-
-
-
+![Imagen27](https://user-images.githubusercontent.com/34029478/102232297-eadc1e00-3ebc-11eb-8b1b-1de1f9bb9787.png)
 
 
 Asimos se utilizo los debidos filtros para que inicien sesión los clientes y los Usuarios.
 
+                                     Filtro SesionActiva.java
 
+![Imagen28](https://user-images.githubusercontent.com/34029478/102232301-ec0d4b00-3ebc-11eb-81b3-6d897adc4e14.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                     Filtro SesionAdmin.java
+                                     
+![Imagen29](https://user-images.githubusercontent.com/34029478/102232220-d861e480-3ebc-11eb-849f-878e70fb37bc.png)
 
 Para la creación de la base de datos utilizamos lo siguiente:
 
 La persistencia.
 
-
-
-
-
-
-
-
-
-
-
-
-
+![Imagen30](https://user-images.githubusercontent.com/34029478/102232226-da2ba800-3ebc-11eb-9606-5e8e780917d9.png)
 
 
 Las respectivos paquetes llamo jpa.
 
-
-
-
-
-
-
-
-
+![Imagen31](https://user-images.githubusercontent.com/34029478/102232231-db5cd500-3ebc-11eb-985b-bc938cbb5ea9.png)
 
 La clase jpa JPAGenericDAO.java
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Imagen32](https://user-images.githubusercontent.com/34029478/102232237-dd269880-3ebc-11eb-9d02-78f81e68217b.png)
 
 También creamos el paquete de los servelets.
 
